@@ -1,0 +1,12 @@
+[Unit]
+Description=teleskop
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/opt/teleskop/<%= @urzadzenie %>.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Pigpiod daemon 
+
+[Service]
+ExecStart=/usr/bin/pigpiod -g
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
